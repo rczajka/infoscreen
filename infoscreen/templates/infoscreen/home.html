@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Info{% endblock %}
+
+{% block body %}
+<div id="slides-wrapper">
+<div id="slides">
+    {% for slide in slides %}
+        <img src="{{ slide }}" />
+    {% endfor %}
+</div>
+</div>
+
+<div id="infobox-wrapper2">
+<div id="infobox-wrapper">
+<div id="infobox" data-infobox="main" ></div>
+</div>
+</div>
+{% endblock %}

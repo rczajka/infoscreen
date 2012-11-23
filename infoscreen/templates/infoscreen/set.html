@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Set infobox {{ info.slug }}{% endblock %}
+
+{% block body %}
+
+
+<form method="post" action="." id="infobox-form">
+{% csrf_token %}
+{{ form.body }}<br/>
+Czas: {{ form.seconds }} sekund<br/>
+<button>Set info</button>
+</form>
+{% endblock %}

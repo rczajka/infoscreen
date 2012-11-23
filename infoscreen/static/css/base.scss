@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Lato;
+    overflow: hidden;
+}
+#infobox-wrapper2 {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+#slides-wrapper {
+    position:absolute;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+#infobox-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+#infobox {
+    display: none;
+    font-size: 2em;
+    box-shadow: 0 0 .2em 0;
+    margin: 0 5em;
+    padding: 3em;
+    z-index: 3000;
+    z-index: 1000;
+    background: white;
+    opacity: .8;
+}
